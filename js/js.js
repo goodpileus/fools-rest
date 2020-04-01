@@ -49,12 +49,16 @@ function newBg() {
     'background' : randomColor,
   });
 
-  $('info-container').css({
+  $('.info-container').css({
+    'background' : randomColor,
+  });
+
+  $('.confirm-wrap').css({
     'background' : randomColor,
   });
 }
 
-var interval = setInterval(timer, 20000);
+var interval = setInterval(timer, 10000);
 
 function timer() {
   newPhrase();
@@ -66,6 +70,11 @@ window.onload = function() {
 
   document.body.style.opacity = "1";
   newBg();
+}
+
+function toggleStyle() {
+  $( ".confirm-wrap" ).toggleClass( "open" );
+  $( ".download-btn" ).toggleClass( "active" );
 }
 
 // function timer2() {
