@@ -53,9 +53,9 @@ function newBg() {
     'background' : randomColor,
   });
 
-  $('.confirm-wrap').css({
-    'background' : randomColor,
-  });
+  // $('.two').css({
+  //   'background' : randomColor,
+  // });
 }
 
 var interval = setInterval(timer, 10000);
@@ -72,9 +72,17 @@ window.onload = function() {
   newBg();
 }
 
+function playSound() {
+  var obj = document.createElement("audio");
+      obj.src = "sound/click.wav";
+      obj.play();
+      obj.volume = 0.05;
+}
+
 function toggleStyle() {
   $( ".confirm-wrap" ).toggleClass( "open" );
   $( ".download-btn" ).toggleClass( "active" );
+  playSound();
 }
 
 // function timer2() {
