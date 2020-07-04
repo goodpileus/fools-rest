@@ -11,8 +11,8 @@
 }
 
 :root {
-  --primary: #EDEAE6;
-  --secondary: #C7BEB6;
+  --primary: #f1f0f0;
+  --secondary: #DFDBD8;
   --text: #71676B;
   --hover:#cd8a6d;
 }
@@ -23,7 +23,7 @@ body {
   font-family: libertinus_monoregular, serif;
   font-size:1.8rem;
   /* margin:1rem; */
-  background:black;
+  background:#C7BEB6;
   /* background:white; */
   hyphens: auto;
   white-space: normal;
@@ -79,6 +79,14 @@ a {
 .block {
   width:20%;
   height:20vh;
+  position: relative;
+}
+
+.block img {
+  position: absolute;
+  bottom:0;
+  right:0;
+  max-width:100px;
 }
 
 .two {
