@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'libertinus_monoregular';
+    src: url('libertinusmono-regular-webfont.woff2') format('woff2'),
+         url('libertinusmono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  --primary: #f1f0f0;
+  --secondary: #DFDBD8;
+  --text: #262a44;
+  --hover:#cd8a6d;
+}
+
+body {
+  /* font-family: 'stempel schneidler std'; */
+  /* font-family: 'fluxisch else'; */
+  /* font-family: libertinus_monoregular, serif; */
+  font-size:1.2rem;
+  /* margin:1rem; */
+  background:#6c7180;
+  /* background:white; */
+  hyphens: auto;
+  white-space: normal;
+  word-wrap: break-word;
+  opacity:0;
+  transition:opacity .2s ease-in-out;
+  color:var(--text);
+}
+
+img {
+  /* max-width: 30vw; */
+  max-width: 550px;
+  /* max-width: 200px; */
+  /* max-height: 100%; */
+  /* filter: blur(5px); */
+}
+
+a {
+  color:var(--text);
+  text-decoration: none;
+  display: block;
+}
+
+#wrapper {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height:100vh;
+  max-height:100vh;
+  width:100%;
+  /* padding:1rem; */
+  text-align: center;
+
+  /* background:linear-gradient(to bottom, transparent 0%, #ffffff61 45%, #ffffff5e 55%, transparent 100%);
+  background-repeat: repeat;
+  animation: down 100s infinite linear;
+  background-size:100% 15%; */
+  position: fixed;
+}
+
+.btn {
+  background: rgb(209, 212, 232);
+  padding:.5rem;
+  border-radius:6px;
+  margin-top: 1.5rem;
+  transition: background .1s ease;
+}
+
+.btn:hover {
+  background:#555773;
+}
+
+.mobile {
+  display:none;
+}
+
+.mobile:hover {
+  background: rgb(209, 212, 232);
+}
+
+.note {
+  margin-top: 1rem;
+  /* max-width:550px; */
+  opacity: .5;
+  font-size: .9rem;
+  position: fixed;
+  bottom:0;
+  padding:2rem;
+}
+
+
+
+
+@media (max-width:800px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .block {
+    /* width:25%; */
+  }
+
+  img {
+    max-width:80vw;
+  }
+
+  .logo {
+    height:1.7rem;
+  }
+
+  .segment {
+    width:100%;
+  }
+
+  .download-btn {
+    width:60%;
+    left:20%;
+    background:var(--secondary);
+  }
+
+  .query {
+    width:60%;
+    left:20%;
+    background:var(--primary);
+  }
+
+  .mobile-space {
+    display: block;
+    margin-top:2rem;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  /* .confirm-wrap div,a {
+    width:100%;
+  } */
+
+  .mobile {
+    display:block;
+  }
+
+  .small {
+    /* font-size: 1.2rem; */
+    /* transform: translate(-.5rem, -2.3rem); */
+  }
+}
