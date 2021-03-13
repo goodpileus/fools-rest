@@ -33,9 +33,9 @@ $('.debris').mouseenter(function() {
 $('.debris').click(function() {
   playSoundSuccess();
   playSound();
-  $('.debris').hide();
+  $('.debris').toggleClass( "debris-hide" );
   $('.ring').show();
-  $('.tab').toggleClass( "tab-show" );;
+  $('.tab').toggleClass( "tab-show" );
 });
 
 $('.tab').click(function() {
